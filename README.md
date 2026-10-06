@@ -1,17 +1,16 @@
-# Домашнее задание 7 — мини-ORM
+# Mini ORM
 
-Мини-ORM на Java и JDBC с базой H2.
+Домашнее задание 7 курса по Java. Собственная мини-ORM на JDBC с базой H2.
 
-- `orm/` — сама библиотека:
-  - аннотации `@Table`, `@Column`, `@Id`;
-  - `EntityMetadata` — чтение метаданных сущностей через рефлексию;
-  - `EntityManager` — сохранение и чтение сущностей;
-  - `DBConfig` — подключение к базе.
-- `homework-orm-6`, `homework-orm-8`, `homework-orm-9` — демонстрационные модули (сущности `Student` и `Book`, каждый со своим `Main`).
+## Что сделано в качестве ДЗ
+
+- Библиотека `orm/`: аннотации `@Table`, `@Column`, `@Id`.
+- Чтение метаданных сущностей через рефлексию (`EntityMetadata`).
+- `EntityManager` для сохранения и чтения сущностей через JDBC.
+- Подключение к H2 (`DBConfig`), исключения (`OrmException`).
+- Демо-модули `homework-orm-6`, `homework-orm-8`, `homework-orm-9` с сущностями `Student` и `Book`.
 
 ## Сборка и запуск
-
-Сборка из корня (модуль `orm` устанавливается в локальный Maven-репозиторий, затем собираются демо-модули):
 
 ```bash
 cd orm && mvn clean install && cd ..
@@ -20,4 +19,4 @@ mvn clean package
 
 Для запуска используйте `Main` в нужном модуле `homework-orm-N`.
 
-Исходный код взят из ветки `homework7` репозитория [wmeenw/JAVAhomework](https://github.com/wmeenw/JAVAhomework).
+Исходный код: ветка `homework7` репозитория [wmeenw/JAVAhomework](https://github.com/wmeenw/JAVAhomework).
