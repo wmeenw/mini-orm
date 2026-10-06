@@ -87,3 +87,10 @@ mvn clean package
 ## Автор
 
 Мария Комарова — домашнее задание 7 по Java.
+
+## Авторство
+
+Исходный код и решения написаны автором репозитория (Мария Комарова) для курса по Java и взяты из ветки `homework7` репозитория [wmeenw/JAVAhomework](https://github.com/wmeenw/JAVAhomework).
+
+Оформление репозитория (структура, README, публикация на GitHub) выполнено с помощью Claude Code (Anthropic).
+
